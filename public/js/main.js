@@ -9,7 +9,7 @@ function ready()
     
 
     function getGallery(){
-        sendRequest('http://127.0.0.1:8000/api/getImages','get')
+        sendRequest('/api/getImages','get')
         .then(function(response){
             galerryBlock.innerHTML = '';
             drawGallery(response.message, galerryBlock);
@@ -48,7 +48,7 @@ function ready()
         image = this.querySelector('.gallery-img');
         id = image.dataset.id;
         toggleModal();
-        sendRequest('http://127.0.0.1:8000/api/deleteImage/'+id,'delete')
+        sendRequest('/api/deleteImage/'+id,'delete')
         .then(function(){
             getGallery();
         });
@@ -183,7 +183,7 @@ function ready()
             img.url = input.value;
             img.url = input.value;
             toggleModal();
-            sendRequest('http://127.0.0.1:8000/api/uploadImageFromUrl','post',img)
+            sendRequest('/api/uploadImageFromUrl','post',img)
             .then(function(response){
                 if(response.status == 'ok')
                 {
@@ -259,7 +259,7 @@ function ready()
 
     function uploadFile(file) {
         toggleModal();
-        let url = 'http://127.0.0.1:8000/api/uploadFile'
+        let url = '/api/uploadFile'
         let formData = new FormData()
         formData.append('file', file)
         fetch(url, {
