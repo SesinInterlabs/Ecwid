@@ -1,0 +1,33 @@
+index:
+    path: /
+    controller: App\Controller\PagesController::index
+
+getAllImages:
+  path: /api/getImages
+  controller: App\Controller\APIController::getAllImages
+  methods: GET
+
+uploadFile:
+  path: /api/uploadFile
+  controller: App\Controller\APIController::uploadFile
+  methods: POST
+
+getImageById:
+  path: /api/getImageById/{id}
+  controller: App\Controller\APIController::getImageById
+  methods: GET
+
+uploadImageFromUrl:
+  path: /api/uploadImageFromUrl
+  controller: App\Controller\APIController::uploadImageFromUrl
+  methods: POST
+
+uploadImageFromUrls:
+  path: /api/uploadImageFromUrls
+  controller: App\Controller\APIController::uploadImageFromUrls
+  methods: POST
+
+deleteImage:
+  path: /api/deleteImage/{id}
+  controller: App\Controller\APIController::deleteImage
+  methods: DELETE
