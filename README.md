@@ -14,13 +14,13 @@
 Файл должен иметь вид:
 ```json
 [{
-"url": "https://don16obqbay2c.cloudfront.net/frontend-test-task/images/493550746.jpg",
+"url": "https://don16obqbay2c.cloudfront.net/frontend-test-task/images/493550746.jpg"
 },
 {
-"url": "https://don16obqbay2c.cloudfront.net/frontend-test-task/images/448964007.jpg",
+"url": "https://don16obqbay2c.cloudfront.net/frontend-test-task/images/448964007.jpg"
 },
 {
-"url": "https://don16obqbay2c.cloudfront.net/frontend-test-task/images/493550739.jpg",
+"url": "https://don16obqbay2c.cloudfront.net/frontend-test-task/images/493550739.jpg"
 }]
 ```
 ## Деплой
